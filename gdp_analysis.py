@@ -6,6 +6,8 @@ from sklearn.cluster import KMeans
 from scipy.optimize import curve_fit
 from scipy import stats
 from scipy.optimize import curve_fit
+import warnings
+warnings.filterwarnings('ignore')
 
 # Define functions for reading and transposing data
 def read_data_excel(excel_url, sheet_name, new_cols, countries):
